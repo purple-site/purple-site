@@ -5,14 +5,38 @@ import merge from "lodash.merge";
 export const theme: ThemeConfig = merge(lightTheme, {
   styles: {
     fonts: {
-      heading: "Roboto",
+      heading: "Londrina Solid",
     },
+    colors: {
+      "text-highlighted": "138, 97, 208",
+      backdrop: "255, 248, 241",
+      fill: "250, 237, 225",
+      muted: "247, 240, 233",
+      "proposal-highlighted": "138, 97, 208",
+      "proposal-success": "138, 97, 208",
+      "button-accent": "138, 97, 208",
+      "button-accent-hover": "157, 121, 219",
+      "button-muted": "184, 155, 232",
+    },
+  },
+  brand: {
+    logo: null,
   },
   nav: {
     primary: [
       { label: "DAO", href: "/vote" },
-      { label: "About", href: "/about" },
+      {
+        label: "Farcaster",
+        href: "https://fcast.me/purple",
+      },
     ],
-    secondary: [],
+    secondary: [
+      { label: "Discord", href: "https://discord.gg/58YJDJ5G" },
+      {
+        label: "Etherscan",
+        href: "https://etherscan.io/address/0xa45662638e9f3bbb7a6fecb4b17853b7ba0f3a60",
+      },
+      { label: "Farcaster", href: "https://fcast.me/purple" },
+    ],
   },
 } as Partial<ThemeConfig>);

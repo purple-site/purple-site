@@ -1,3 +1,3 @@
-# My DAO Governance
+# Purple DAO
 
-Edit your voting description in the `templates/vote/description.md` file
+Purple members govern Purple DAO. Purple members can vote on proposals or delegate their vote to a third party.
